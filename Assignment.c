@@ -29,7 +29,7 @@ int main() {
 
     }
 
-    printf("\n------ Student Details ---------\n");
+    printf("\nStudent Details\n");
 
     for(i = 0; i < 3; i++) {
         printf("Name: %s | Roll no: %d | Marks: %.2f, %.2f | Result: %.2f\n", s[i].name, s[i].r_no, s[i].m1, s[i].m2, s[i].result);
