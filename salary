@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main()
+{
+    float bs, hra, ta, gs, ts;
+    printf("Enter Basic Salary: ");
+    scanf("%f", &bs);
+
+    hra = 0.1 * bs;
+    ta = 0.05 * bs;
+
+    gs = bs + hra + ta;
+    ts = gs - (0.02*gs);
+
+    printf("Basic Salary:   %.2f\n", bs);
+    printf("HRA (10%%):      %.2f\n", hra);
+    printf("TA (5%%):        %.2f\n", ta);
+    printf("Gross Salary:   %.2f\n", gs);
+    printf("--------------------------\n");
+    printf("Total Salary:   %.2f\n", ts);
+}
