@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+void main() {
+    float x, y;
+    char opr;
+    printf("Enter Two Numbers: ");
+    printf("Number one: ");
+    scanf("%f", &x);
+    printf("Enter Second number: ");
+    scanf("%f", &y);
+
+    printf("Enter operations as per following: \n 1.Addition - A \n 2.Subtraction - S \n 3.Multiplication - M \n 4.Division - D \n");
+    scanf(" %c", &opr);
+
+    switch(opr) {
+        case 'A':
+            printf("Addition of %f and %f is %.2f :", x, y, x + y);
+            break;
+        case 'S':
+            printf("Difference between %f and %f is %.2f :" , x, y, x-y);
+            break;
+        case 'M':
+            printf("Multiplication of %f and %f is %.2f :", x, y, x*y);
+            break;
+        case 'D':
+            if (y != 0) {
+                printf("Division of %f by %f is %.2f :", x, y, x/y);
+                break;
+            }
+            else {
+                printf("Invalid Input");
+            }
+        
+        default:
+            printf("Invalid operation selected.");
+            
+    };
+}
