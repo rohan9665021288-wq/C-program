@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, choice;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    do {
+        printf("
+Menu:
+1. Square root
+2. Square
+3. Cube
+4. Prime check
+5. Factorial
+6. Prime factors
+0. Exit
+Choice: ");
+        scanf("%d", &choice);
+        
+        switch(choice) {
+            // Cases go here
+        }
+    } while(choice != 0);
+    
+    return 0;
+}
